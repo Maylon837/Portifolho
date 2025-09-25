@@ -5,47 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  align-items: center;
-  height: 70vh;
-  padding-left: 5%; /* Adiciona um espaço da margem esquerda */
-  color: white;
-}
-
-main h1 {
-  padding-left: 15%;
-  font-size: 3rem;
-  font-family: Georgia, serif; /* O jeito certo de definir a fonte */
-  font-weight: 300;
-
-}
-
-.main-content {
-    display: flex;
-    justify-content: center; /* Centraliza o bloco de texto e a imagem como um todo */
-    align-items: center;
-    width: 100%;
-    padding: 0 10%; /* Adiciona um respiro nas laterais */
-}
-
-.texto-container {
-    max-width: 600px;
-    margin-right: 450px; /* Adicione esta linha para criar o espaço entre o texto e a imagem */
-    padding-left: -80%;
-}
-
-/* Opcional: Se a sua imagem estiver em um contêiner separado */
-main img {
-    border-radius: 10%;
-    border: 7px solid white;
-}
-
-.main-content img {
-    /* Mantenha os estilos de tamanho, borda, etc. */
-    max-width: 450px;
-    height: auto;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -138,27 +97,4 @@ body {
     /* Se quisesse "da direita para a esquerda", usaria um valor negativo no X:
     transform: translate(-100vw, 100vh); */
   }
-}
-
-/* Estiliza o contêiner dos ícones */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Espaço entre os ícones */
-    margin-top: 50px; /* Espaço do topo */
-}
-
-/* Estiliza a imagem de cada ícone */
-.social-icons img {
-    width: 60px; /* Tamanho dos ícones, ajuste se quiser */
-    height: 60px;
-    border-radius: 50%; /* Essencial para deixar a imagem redonda */
-    border: 2px solid white; /* Uma borda branca para destacar */
-    transition: transform 0.3s ease; /* Animação suave para o hover */
-}
-
-/* Adiciona um efeito ao passar o mouse sobre os ícones */
-.social-icons img:hover {
-    transform: scale(1.1); /* Aumenta o tamanho em 10% */
 }
