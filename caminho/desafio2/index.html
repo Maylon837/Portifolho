@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Situação do Aluno</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <h1>Cadastro e Situação do Aluno</h1>
+
+    <div id="cadastro-area">
+        <label for="nome">Digite o nome:</label>
+        <input type="text" id="nome"> 
+        
+        <label for="nota">Digite a nota:</label>
+        <input type="number" id="nota" min="0" max="10"> 
+        
+        <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+
+    <hr>
+    
+    <div id="filtro-area">
+        <button onclick="mostrarTodos()">Mostrar Todos</button>
+        <button onclick="filtrarAprovados()">Mostrar Aprovados</button>
+    </div>
+
+    <div id="resultado">
+        A lista de alunos aparecerá aqui.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
