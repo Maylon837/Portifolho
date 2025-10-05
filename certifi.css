@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*O box-sizing define como o navegador calcula as larguras e alturas dos elementos. */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-download {
+    /* Transforma o link em um bloco para ocupar a largura total */
+    display: block; 
+    
+    /* Cores e Aparência do Botão */
+    background-color: #007bff; /* Azul, cor comum de botão */
+    color: white;
+    padding: 10px 15px;
+    margin-top: 15px; /* Espaço entre o texto e o botão */
+    border-radius: 10px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold;
+    /* Esta linha é o SEGREDO da animação suave */
+    transition: all 0.3s ease-in-out; 
+    
+    /* Para permitir o efeito de escala */
+    display: block; 
+}
+
+/* NOVO/EDITADO: Efeito ao passar o mouse */
+.btn-download:hover {
+    background-color: #0056b3; 
+    
+    /* 1. Efeito de "Salto": Aumenta o botão em 5% */
+    transform: scale(1.05); 
+    
+    /* 2. Efeito de Sombra: Faz parecer que ele saltou da tela */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Sombra azul brilhante */
+}
+
+/* Garante que todas as caixas tenham o mesmo tamanho verticalmente */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    gap: 20px;
+
+    /* MODIFICAÇÃO CHAVE AQUI: Define uma largura máxima razoável */
+    max-width: 1000px; /* Tente 1000px ou menos */
+    
+    /* Centraliza o container na página */
+    margin: 10px auto; 
+    padding: 0 10px; /* Adiciona um pequeno padding nas laterais para telas menores */
+    
+}
+
+/* Ajuste no card para posicionar o botão no final */
+.certificado-card {
+    /* Transforma o card em um container flexível verticalmente */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid cadetblue;
+    border-radius: 7px;
+    /* Faz com que o botão vá para o final do espaço disponível */
+    justify-content: space-between; 
+    background-color: rgba(255, 255, 255, 0.05);
+    /* ESSENCIAL: Garante que a animação será suave e uniforme */
+    transition: all 0.4s ease-in-out; 
+    
+    /* Dá um pouco de profundidade, mesmo no estado normal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    
+    /* ... (restante do seu CSS do certificado-card) */
+}
+/* NOVO: Efeito ao passar o mouse em toda a caixa */
+.certificado-card:hover {
+    /* Levanta o card no eixo Z (efeito 3D) */
+    transform: translateY(-8px); 
+    
+    /* Aumenta a sombra para dar a sensação de mais profundidade */
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.6); 
+}
+
+/* Garante que a imagem se ajuste dentro da caixa */
+.certificado-card img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.certificado-card h3 {
+    text-align: center;
+}
+
+.certificado-card p {
+    text-align: center;
+}
+
+.certificado-card a {
+    text-align: center;
+}

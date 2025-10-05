@@ -1,0 +1,44 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para cada módulo */
+.modulo-projeto {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 5px solid #007bff; /* Linha de destaque */
+}
+
+/* Estilo para a lista de links */
+.lista-projetos {
+    list-style: none; /* Remove os pontos da lista */
+    padding: 0;
+}
+
+.lista-projetos li {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #333; /* Linha divisória */
+    padding-bottom: 10px;
+}
+
+.projeto-link {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff; /* Cor do link */
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+}
+
+.projeto-link:hover {
+    color: #28a745; /* Cor ao passar o mouse */
+}
+
+.descricao {
+    display: block;
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 5px;
+}
+
