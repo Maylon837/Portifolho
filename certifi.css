@@ -14,7 +14,6 @@
     color: white;
     padding: 10px 15px;
     margin-top: 15px; /* Espaço entre o texto e o botão */
-    border-radius: 10px;
     text-decoration: none; /* Remove o sublinhado do link */
     font-weight: bold;
     /* Esta linha é o SEGREDO da animação suave */
@@ -57,7 +56,6 @@
     display: flex;
     flex-direction: column;
     border: 2px solid cadetblue;
-    border-radius: 7px;
     /* Faz com que o botão vá para o final do espaço disponível */
     justify-content: space-between; 
     background-color: rgba(255, 255, 255, 0.05);
