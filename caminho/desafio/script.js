@@ -25,3 +25,9 @@ function adi() {
     let calculo = (numero1 / numero2);
     document.getElementById("caladi").innerHTML= "A Adição é<br>" +calculo.toFixed(2)
 }
+
+function pix() {
+    let numero1 = parseFloat(document.getElementById("111numero").value);
+    let calculo = (numero1) * 0.9
+    document.getElementById("pix").innerHTML= "O resultado em pix é <br>" +calculo.toFixed(2)
+}
