@@ -1,96 +1,64 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /*O box-sizing define como o navegador calcula as larguras e alturas dos elementos. */
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.btn-download {
-    /* Transforma o link em um bloco para ocupar a largura total */
-    display: block; 
-    
-    /* Cores e Aparência do Botão */
-    background-color: #007bff; /* Azul, cor comum de botão */
-    color: white;
-    padding: 10px 15px;
-    margin-top: 15px; /* Espaço entre o texto e o botão */
-    text-decoration: none; /* Remove o sublinhado do link */
-    font-weight: bold;
-    /* Esta linha é o SEGREDO da animação suave */
-    transition: all 0.3s ease-in-out; 
-    
-    /* Para permitir o efeito de escala */
-    display: block; 
-}
-
-/* NOVO/EDITADO: Efeito ao passar o mouse */
-.btn-download:hover {
-    background-color: #0056b3; 
-    
-    /* 1. Efeito de "Salto": Aumenta o botão em 5% */
-    transform: scale(1.05); 
-    
-    /* 2. Efeito de Sombra: Faz parecer que ele saltou da tela */
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Sombra azul brilhante */
-}
-
-/* Garante que todas as caixas tenham o mesmo tamanho verticalmente */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch; 
-    gap: 20px;
-
-    /* MODIFICAÇÃO CHAVE AQUI: Define uma largura máxima razoável */
-    max-width: 1000px; /* Tente 1000px ou menos */
-    
-    /* Centraliza o container na página */
-    margin: 10px auto; 
-    padding: 0 10px; /* Adiciona um pequeno padding nas laterais para telas menores */
-    
+  display: flex;
+  flex-wrap: wrap;          /* permite quebrar linha em telas pequenas */
+  justify-content: center;  /* centraliza os cards */
+  gap: 30px;                /* espaço entre cards */
+  max-width: 1200px;        /* limite largo para caber 2-3 cards lado a lado */
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
-/* Ajuste no card para posicionar o botão no final */
 .certificado-card {
-    /* Transforma o card em um container flexível verticalmente */
-    display: flex;
-    flex-direction: column;
-    border: 2px solid cadetblue;
-    /* Faz com que o botão vá para o final do espaço disponível */
-    justify-content: space-between; 
-    background-color: rgba(255, 255, 255, 0.05);
-    /* ESSENCIAL: Garante que a animação será suave e uniforme */
-    transition: all 0.4s ease-in-out; 
-    
-    /* Dá um pouco de profundidade, mesmo no estado normal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
-    
-    /* ... (restante do seu CSS do certificado-card) */
-}
-/* NOVO: Efeito ao passar o mouse em toda a caixa */
-.certificado-card:hover {
-    /* Levanta o card no eixo Z (efeito 3D) */
-    transform: translateY(-8px); 
-    
-    /* Aumenta a sombra para dar a sensação de mais profundidade */
-    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.6); 
+  flex: 1 1 300px;          /* cresce, mas com largura mínima de 300px */
+  max-width: 400px;         /* limite individual para não esticar demais */
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 2px solid cadetblue;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+  text-align: center;
 }
 
-/* Garante que a imagem se ajuste dentro da caixa */
+.certificado-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(95, 158, 160, 0.45);
+}
+
 .certificado-card img {
-    max-width: 100%; 
-    height: auto;
-    margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .certificado-card h3 {
-    text-align: center;
+  font-size: 1.6rem;
+  margin: 10px 0;
+  color: #ffffff;
 }
 
 .certificado-card p {
-    text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 20px;
 }
 
-.certificado-card a {
-    text-align: center;
+.btn-download {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
 }

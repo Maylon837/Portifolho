@@ -1,50 +1,61 @@
+/* ==========================================================================
+   Reset e Base
+   ========================================================================== */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /*O box-sizing define como o navegador calcula as larguras e alturas dos elementos. */
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
-main {
-  align-items: center;
-  height: 70vh;
-  padding-left: 5%; /* Adiciona um espaço da margem esquerda */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: black;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;        
 }
 
-main h1 {
-  font-size: 3rem;
-  font-family: Georgia, serif; /* O jeito certo de definir a fonte */
-  font-weight: 300;
-
+/* ==========================================================================
+   Animação de estrelas 
+   ========================================================================== */
+.stars-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;       
 }
 
-.main-content {
-    display: flex;
-    justify-content: center; /* Centraliza o bloco de texto e a imagem como um todo */
-    align-items: center;
-    width: 100%;
-    padding: 0 10%; /* Adiciona um respiro nas laterais */
+.stars {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 1px rgba(255,255,255,0.8),
+    0 0 4px rgba(255,255,255,0.4);
+  animation: moveStars 5s linear infinite;
 }
 
-.texto-container {
-    max-width: 600px;
-    margin-right: 450px; /* Adicione esta linha para criar o espaço entre o texto e a imagem */
-    padding-left: -80%;
+@keyframes moveStars {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100vw, 100vh);
+  }
 }
 
-/* Opcional: Se a sua imagem estiver em um contêiner separado */
-main img {
-    border-radius: 10%;
-    border: 7px solid white;
-}
-
-.main-content img {
-    /* Mantenha os estilos de tamanho, borda, etc. */
-    max-width: 450px;
-    height: auto;
-}
-
+/* ==========================================================================
+   Header  Navegação
+   ========================================================================== */
 header {
   display: flex;
   justify-content: space-between;
@@ -54,110 +65,231 @@ header {
   border-bottom: 2px solid #155542;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-
 }
 
 header .logo {
-  font-size: 1.5rem; /*tamanho da letra*/
-  font-weight: 1000; /*Deixa em negrito*/
+  font-size: 1.5rem;
+  font-weight: 1000;
   color: #ffffff;
+  font-family: Georgia, serif;
   text-shadow: 1px 1px 7px #ffffff;
-  font-family: Georgia;
- }
-
-header nav ul {
-    color: #ffffff;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif; /* Adicione a fonte aqui */
 }
 
-nav ul a {
-    border-radius: 10px;
-    border: 3px solid black;
-    padding: 2px 2px;
-    color: #ffffff;
-    margin: 0px 5px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: #000000;
-    font-size: 0.8rem;
-    font-family: 'Poppins', sans-serif; /* E também aqui para garantir que o estilo se aplique */ 
-  }
-
-nav ul > a:hover {
-    background-color: rgb(147, 175, 231);
-    scale: 1.05;
-}
-
-body {
-  margin: 0;
-  height: 100vh;
-  background: black;
-  overflow: hidden;
+nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
-/* Container para as estrelas */
-.stars-container {
-  position: fixed; /* Isso faz com que o container ocupe a tela toda */
-  top: 0;
-  left: 0;
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgb(147, 175, 231);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Conteúdo Principal
+   ========================================================================== */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7vh 5%;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  overflow: hidden; /* Garante que as estrelas não criem barras de rolagem */
-  z-index: -1; /* Deixa as estrelas atrás de outros elementos, como o cabeçalho */
+  max-width: 1200px;
+  gap: 4rem;
+  padding: 0 10%;
 }
 
-/* Estilo de uma única estrela */
-.stars {
-  width: 2px;
-  height: 5px; /* Aumentei um pouco a altura para parecerem mais com "rastros" */
-  background: white;
-  position: absolute; /* Permite que a estrela se mova livremente dentro do container */
-  top: 0;
-  animation: moveStars 5s linear infinite;
-
-  box-shadow:
-    0 0 1px 1px rgba(255, 255, 255, 0.8), /* Brilho interno mais forte */
-    0 0 1px 1px rgba(255, 255, 255, 0.4); /* Brilho externo mais suave */
+.texto-container {
+  max-width: 600px;
+  flex: 1;
 }
 
+.main-content img {
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  border: 7px solid white;
+  object-fit: cover;
+}
 
-/* A animação continua a mesma */
-@keyframes moveStars {
-  from {
-    /* Começa no topo e na posição horizontal inicial */
-    transform: translate(0, 0); 
+/* ==========================================================================
+   Rodapé  Ícones sociais
+   ========================================================================== */
+.social-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;     
+  gap: 15px;                  
+  z-index: 1000;
+}
+
+.social-float img {
+  width: 40px;               
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.social-float img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+}
+
+/* ==========================================================================
+   Tipografia básica
+   ========================================================================== */
+h1 {
+  font-size: 3rem;
+  font-family: Georgia, serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* =============================================
+   RESPONSIVIDADE - MEDIA QUERIES
+   ============================================= */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
   }
-  to {
-    /* Move para baixo (eixo Y) e para a direita (eixo X) ao mesmo tempo */
-    /* Para a diagonal "da esquerda para a direita": */
-    transform: translate(100vw, 100vh);
-    /* Se quisesse "da direita para a esquerda", usaria um valor negativo no X:
-    transform: translate(-100vw, 100vh); */
-  }
-}
 
-/* Estiliza o contêiner dos ícones */
-.social-icons {
-    display: flex;
-    justify-content: center;
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .main-content,
+  .texto-container,
+  .imagem-container {
+    flex-direction: column;
     align-items: center;
-    gap: 20px; /* Espaço entre os ícones */
-    margin-top: 50px; /* Espaço do topo */
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .main-content img {
+    max-width: 90%;
+    margin: 20px 0;
+  }
+
+  main {
+    padding: 30px 10px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .certificado-card {
+    max-width: 100%;
+  }
+
+  .modulos-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .modulo-projeto {
+    padding: 20px;
+  }
+
+  .lista-projetos li {
+    margin-bottom: 20px;
+  }
+
+  .social-float {
+    bottom: 15px;
+    right: 15px;
+    flex-direction: row;    
+    gap: 20px;
+  }
+
+  .social-float img {
+    width: 45px;
+    height: 45px;
+  }
 }
 
-/* Estiliza a imagem de cada ícone */
-.social-icons img {
-    width: 60px; /* Tamanho dos ícones, ajuste se quiser */
-    height: 60px;
-    border-radius: 50%; /* Essencial para deixar a imagem redonda */
-    border: 2px solid white; /* Uma borda branca para destacar */
-    transition: transform 0.3s ease; /* Animação suave para o hover */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  .modulos-wrapper {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
 }
 
-/* Adiciona um efeito ao passar o mouse sobre os ícones */
-.social-icons img:hover {
-    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .social-float img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-download {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }

@@ -1,44 +1,86 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+.projetos-main {
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
 }
 
-/* Estilo para cada módulo */
+.projetos-main h1 {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.modulos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px; /* espaço entre os módulos */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .modulo-projeto {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border-left: 5px solid #007bff; /* Linha de destaque */
+  flex: 1 1 400px; /* permite 2 colunas em telas médias/grandes */
+  max-width: 600px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
 }
 
-/* Estilo para a lista de links */
+.modulo-projeto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.3);
+}
+
+.modulo-projeto h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.modulo-projeto p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
 .lista-projetos {
-    list-style: none; /* Remove os pontos da lista */
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  text-align: left;
 }
 
 .lista-projetos li {
-    margin-bottom: 15px;
-    border-bottom: 1px dashed #333; /* Linha divisória */
-    padding-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .projeto-link {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #007bff; /* Cor do link */
-    text-decoration: none;
-    transition: color 0.3s;
-    display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .projeto-link:hover {
-    color: #28a745; /* Cor ao passar o mouse */
+  color: #00aaff;
+  text-decoration: underline;
 }
 
 .descricao {
-    display: block;
-    font-size: 0.9em;
-    color: #ccc;
-    margin-top: 5px;
+  display: block;
+  font-size: 0.95rem;
+  color: #aaaaaa;
+  margin-top: 4px;
 }
 
+/* Responsivo: em telas pequenas, módulos empilham */
+@media (max-width: 900px) {
+  .modulos-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
