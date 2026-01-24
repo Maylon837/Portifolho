@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Receitas Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Receitas Deliciosas</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bolos-doces">Bolos e Doces</a></li>
+                <li><a href="#assados">Assados</a></li>
+                <li><a href="#cozidos">Cozidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="secoes-categorias">
+
+            <section id="home" class="categoria">
+                <p>Vamos iniciar sua jornada culinária, escolha uma categoria no menu acima para ver as receitas. </p>
+            </section>
+            <section id="bolos-doces" class="categoria">
+                <h2>Bolos e Doces</h2>
+                <div class="grid-receitas">
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Bolo de chocolate.webp" alt="Bolo de Chocolate">
+                        <h3>Bolo de Chocolate</h3>
+                        <a href="#receita-bolo-chocolate" class="btn-ver"
+                            onclick="mostrarReceita(event, 'receita-bolo-chocolate')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Bolo de Leite Ninho com Morango.jpg" alt="Bolo de Leite Ninho">
+                        <h3>Bolo de Leite Ninho com Morango</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-ninho-morango')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Mousse de Maracujá.jpg" alt="Mousse de Maracujá">
+                        <h3>Mousse de Maracujá</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-mousse-maracuja')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Chocolate Quente.jpg" alt="Chocolate Quente">
+                        <h3>Chocolate Quente</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-chocolate-quente')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Bolo de Fubá.jfif" alt="Bolo de Fubá">
+                        <h3>Bolo de Fubá</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-bolo-fuba')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Bolinho de Chuva com Banana.png" alt="Bolinho de Chuva">
+                        <h3>Bolinho de Chuva com Banana</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-bolinho-chuva')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Bolo de Milho.avif" alt="Bolo de Milho">
+                        <h3>Bolo de Milho</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-bolo-milho')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/brigadeiro.webp" alt="Brigadeiro">
+                        <h3>Brigadeiro</h3>
+                        <a href="#receita-brigadeiro" class="btn-ver"
+                            onclick="mostrarReceita(event, 'receita-brigadeiro')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Panquecas Doces.jpg" alt="Panquecas">
+                        <h3>Panquecas Doces</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-panquecas')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Maçã do Amor.webp" alt="Maçã do Amor">
+                        <h3>Maçã do Amor</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-maca-amor')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Beijinho de Coco.webp" alt="Beijinho">
+                        <h3>Beijinho de Coco</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-beijinho')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Torta de Limão.webp" alt="Torta de Limão">
+                        <h3>Torta de Limão</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-torta-limao')">Ver
+                            Receita</a>
+                    </div>
+                </div>
+
+                <div class="detalhe-receita" id="receita-panquecas" style="display: none;">
+                    <h3>Panquecas Americanas Doces</h3>
+                    <p><strong>Tempo:</strong> 20min | <strong>Rendimento:</strong> 8 unidades</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 xícara de farinha de trigo e 1 colher de sopa de açúcar</li>
+                        <li>1 ovo e 1 xícara de leite</li>
+                        <li>2 colheres de sopa de manteiga derretida</li>
+                        <li>1 pitada de sal e 1 colher de chá de fermento</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Misture os secos e depois adicione os líquidos até ficar homogéneo.</li>
+                        <li>Aqueça uma frigideira untada e coloque pequenas porções.</li>
+                        <li>Vire quando surgirem bolhas e sirva com mel ou calda.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-panquecas')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-maca-amor" style="display: none;">
+                    <h3>Maçã do Amor Clássica</h3>
+                    <p><strong>Tempo:</strong> 40min | <strong>Rendimento:</strong> 6 unidades</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>6 maçãs vermelhas higienizadas</li>
+                        <li>2 xícaras de açúcar e 1/2 xícara de água</li>
+                        <li>1 colher de sopa de vinagre (para dar brilho)</li>
+                        <li>Corante alimentício vermelho</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Espete palitos de sorvete nas maçãs.</li>
+                        <li>Numa panela, misture o açúcar, a água, o corante e o vinagre (não mexa depois de ir ao
+                            fogo).</li>
+                        <li>Cozinhe até chegar ao ponto de bala dura. Mergulhe as maçãs e deixe secar em papel manteiga.
+                        </li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-maca-amor')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-beijinho" style="display: none;">
+                    <h3>Beijinho de Coco</h3>
+                    <p><strong>Tempo:</strong> 25min | <strong>Rendimento:</strong> 30 unidades</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 lata de leite condensado</li>
+                        <li>1 colher de sopa de manteiga</li>
+                        <li>100g de coco ralado</li>
+                        <li>Cravos-da-índia para decorar</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Cozinhe o leite condensado, a manteiga e metade do coco em fogo baixo até desgrudar da
+                            panela.</li>
+                        <li>Deixe esfriar, faça bolinhas e passe no restante do coco ralado.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-beijinho')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-torta-limao" style="display: none;">
+                    <h3>Torta de Limão Irresistível</h3>
+                    <p><strong>Tempo:</strong> 1h | <strong>Rendimento:</strong> 8 fatias</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 pacote de biscoito de leite triturado e 100g de manteiga</li>
+                        <li>1 lata de leite condensado e 1 lata de creme de leite</li>
+                        <li>Suco de 3 limões e raspas para decorar</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Misture o biscoito com a manteiga e forre uma forma. Asse por 10 min.</li>
+                        <li>Bata o leite condensado, o creme de leite e o limão no liquidificador.</li>
+                        <li>Recheie a massa fria e leve à geladeira por 3 horas.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-torta-limao')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-bolo-chocolate" style="display: none;">
+                    <h3>Receita: Bolo de Chocolate Fofinho</h3>
+                    <p><strong>Tempo:</strong> 50min | <strong>Rendimento:</strong> 12 fatias</p>
+
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>2 xícaras de farinha de trigo</li>
+                        <li>1 xícara de açúcar</li>
+                        <li>1/2 xícara de cacau em pó</li>
+                        <li>3 ovos e 1 colher de fermento</li>
+                    </ul>
+
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Bata os líquidos no liquidificador.</li>
+                        <li>Misture os secos manualmente em uma tigela.</li>
+                        <li>Asse em forno preaquecido (180°C) por 40 min.</li>
+                    </ol>
+
+                    <button class="btn-voltar" onclick="fecharReceita('receita-bolo-chocolate')">Fechar
+                        Receita</button>
+                </div>
+
+
+                <div class="detalhe-receita" id="receita-brigadeiro" style="display: none;">
+                    <h3>Receita: Brigadeiro Tradicional</h3>
+                    <p><strong>Tempo:</strong> 30min | <strong>Rendimento:</strong> 25 unidades</p>
+
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 lata de leite condensado</li>
+                        <li>1 colher de sopa de manteiga sem sal</li>
+                        <li>3 colheres de sopa de chocolate em pó (ou cacau)</li>
+                        <li>Chocolate granulado para decorar</li>
+                    </ul>
+
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Numa panela, misture o leite condensado, a manteiga e o chocolate em pó.</li>
+                        <li>Cozinhe em lume baixo, mexendo sempre, até que a massa comece a desgrudar do fundo da
+                            panela.</li>
+                        <li>Deixe arrefecer num prato untado com manteiga.</li>
+                        <li>Faça pequenas bolas com as mãos untadas e passe pelo granulado.</li>
+                    </ol>
+
+                    <button class="btn-voltar" onclick="fecharReceita('receita-brigadeiro')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-ninho-morango" style="display: none;">
+                    <h3>Bolo de Leite Ninho com Morango</h3>
+                    <p><strong>Tempo:</strong> 1h 20min | <strong>Rendimento:</strong> 15 fatias</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>Pão de ló de baunilha</li>
+                        <li>1 lata de leite condensado e 1 lata de creme de leite</li>
+                        <li>1 xícara de Leite Ninho</li>
+                        <li>2 caixas de morangos frescos</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Faça um brigadeiro branco com o leite condensado e o Leite Ninho.</li>
+                        <li>Misture o creme de leite após esfriar.</li>
+                        <li>Monte o bolo em camadas: massa, creme e morangos picados.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-ninho-morango')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-mousse-maracuja" style="display: none;">
+                    <h3>Mousse de Maracujá</h3>
+                    <p><strong>Tempo:</strong> 15min (+3h geladeira) | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 lata de leite condensado</li>
+                        <li>1 lata de creme de leite</li>
+                        <li>1 xícara de suco concentrado de maracujá</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Bata todos os ingredientes no liquidificador por 5 minutos.</li>
+                        <li>Coloque em uma travessa e leve à geladeira até firmar.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-mousse-maracuja')">Fechar
+                        Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-chocolate-quente" style="display: none;">
+                    <h3>Chocolate Quente Cremoso</h3>
+                    <p><strong>Tempo:</strong> 10min | <strong>Rendimento:</strong> 2 canecas</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500ml de leite</li>
+                        <li>1 colher de sopa de amido de milho</li>
+                        <li>3 colheres de sopa de chocolate em pó</li>
+                        <li>Açúcar a gosto e 1 pau de canela</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Dissolva o amido no leite frio.</li>
+                        <li>Leve ao fogo médio com o chocolate e a canela, mexendo até engrossar.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-chocolate-quente')">Fechar
+                        Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-bolo-milho" style="display: none;">
+                    <h3>Receita: Bolo de Milho Cremoso</h3>
+                    <p><strong>Tempo:</strong> 50min | <strong>Rendimento:</strong> 12 fatias</p>
+
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 lata de milho verde (escorra a água)</li>
+                        <li>3 ovos inteiros</li>
+                        <li>1 xícara de açúcar</li>
+                        <li>2 colheres de sopa de manteiga</li>
+                        <li>1/2 xícara de fubá ou milharina</li>
+                        <li>1 colher de sopa de fermento em pó</li>
+                    </ul>
+
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>No liquidificador, bata o milho, os ovos, o açúcar, a manteiga e o fubá até ficar homogêneo.
+                        </li>
+                        <li>Adicione o fermento e bata rapidamente apenas para misturar.</li>
+                        <li>Despeje em uma forma untada e asse em forno preaquecido a 180°C por cerca de 40 minutos.
+                        </li>
+                    </ol>
+
+                    <button class="btn-voltar" onclick="fecharReceita('receita-bolo-milho')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-bolo-fuba" style="display: none;">
+                    <h3>Receita: Bolo de Fubá da Vovó</h3>
+                    <p><strong>Tempo:</strong> 45min | <strong>Rendimento:</strong> 10 fatias</p>
+
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>3 ovos e 1 xícara de óleo</li>
+                        <li>1 xícara de leite e 2 xícaras de açúcar</li>
+                        <li>1 xícara de fubá e 1 xícara de farinha de trigo</li>
+                        <li>1 colher de sopa de fermento em pó</li>
+                        <li>Opcional: 1 colher de sopa de sementes de erva-doce</li>
+                    </ul>
+
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Bata no liquidificador os ovos, o óleo, o leite e o açúcar.</li>
+                        <li>Em uma tigela, misture o fubá e a farinha. Adicione a mistura do liquidificador e mexa bem.
+                        </li>
+                        <li>Finalize com o fermento (e a erva-doce) e asse a 180°C por 35 a 40 minutos.</li>
+                    </ol>
+
+                    <button class="btn-voltar" onclick="fecharReceita('receita-bolo-fuba')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-bolinho-chuva" style="display: none;">
+                    <h3>Receita: Bolinho de Chuva com Banana</h3>
+                    <p><strong>Tempo:</strong> 25min | <strong>Rendimento:</strong> 30 bolinhos</p>
+
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>2 ovos e 1/2 xícara de açúcar</li>
+                        <li>1 xícara de leite</li>
+                        <li>2 e 1/2 xícaras de farinha de trigo</li>
+                        <li>2 bananas pratas picadinhas</li>
+                        <li>Açúcar e canela para polvilhar</li>
+                    </ul>
+
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Misture os ovos, o açúcar e o leite. Adicione a farinha aos poucos até dar o ponto (massa
+                            pesada).</li>
+                        <li>Misture as bananas picadas à massa.</li>
+                        <li>Frite colheradas da massa em óleo quente até dourarem.</li>
+                        <li>Escorra em papel toalha e passe na mistura de açúcar com canela.</li>
+                    </ol>
+
+                    <button class="btn-voltar" onclick="fecharReceita('receita-bolinho-chuva')">Fechar Receita</button>
+                </div>
+
+            </section>
+
+            <section id="assados" class="categoria">
+                <h2>Assados</h2>
+                <div class="grid-receitas">
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Frango Assado Especial.jpg" alt="Frango Assado">
+                        <h3>Frango Assado Especial</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-frango')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Strogonoff de Carne.webp" alt="Strogonoff">
+                        <h3>Strogonoff de Carne</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-strogonoff')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Escondidinho de Linguiça.webp" alt="Escondidinho">
+                        <h3>Escondidinho de Linguiça</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-escondidinho')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Panqueca com Carne Moída.webp" alt="Panqueca">
+                        <h3>Panqueca com Carne Moída</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-panqueca-carne')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Lasanha à Bolonhesa.jpg" alt="Lasanha">
+                        <h3>Lasanha à Bolonhesa</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-lasanha')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Torta Salgada de Frango.webp" alt="Torta Salgada">
+                        <h3>Torta Salgada de Frango</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-torta-salgada')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Filé Mignon ao Molho Madeira.webp" alt="Filé Mignon">
+                        <h3>Filé Mignon ao Molho Madeira</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-file')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Peru Assado Especial.jpg" alt="Peru Assado">
+                        <h3>Peru Assado Especial</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-peru')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Fraldinha Assada na Manteiga.jfif" alt="Fraldinha Assada">
+                        <h3>Fraldinha Assada na Manteiga</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-fraldinha')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Costela Gaúcha no Forno.jpg" alt="Costela">
+                        <h3>Costela Gaúcha no Forno</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-costela')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Enroladinho de Salsicha.webp" alt="Enroladinho de Salsicha">
+                        <h3>Enroladinho de Salsicha</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-enroladinho')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Batata Assada com Carne.webp" alt="Batata com Carne">
+                        <h3>Batata Assada com Carne</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-batata-carne')">Ver
+                            Receita</a>
+                    </div>
+
+                </div>
+
+                <div class="detalhe-receita" id="receita-frango" style="display: none;">
+                    <h3>Frango Assado com Ervas</h3>
+                    <p><strong>Tempo:</strong> 1h 30min | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 frango inteiro ou coxas e sobrecoxas</li>
+                        <li>4 batatas médias cortadas em canoa</li>
+                        <li>Manteiga, alho, alecrim e sal</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Tempere o frango com alho, sal e limão. Besunte com manteiga e ervas.</li>
+                        <li>Coloque na assadeira com as batatas ao redor.</li>
+                        <li>Cubra com papel alumínio (40 min) e depois asse sem papel até dourar.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-frango')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-strogonoff" style="display: none;">
+                    <h3>Strogonoff de Carne Clássico</h3>
+                    <p><strong>Tempo:</strong> 30min | <strong>Rendimento:</strong> 4 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500g de filé mignon ou alcatra em tiras</li>
+                        <li>1 cebola picada e 2 dentes de alho</li>
+                        <li>1 lata de creme de leite</li>
+                        <li>3 colheres de ketchup e 1 de mostarda</li>
+                        <li>Champignon a gosto</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Sele a carne em fogo alto e reserve.</li>
+                        <li>Refogue cebola e alho, volte a carne e adicione ketchup e mostarda.</li>
+                        <li>Desligue o fogo, misture o creme de leite e sirva com arroz e batata palha.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-strogonoff')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-escondidinho" style="display: none;">
+                    <h3>Escondidinho de Linguiça</h3>
+                    <p><strong>Tempo:</strong> 50min | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1kg de mandioca cozida e espremida</li>
+                        <li>500g de linguiça calabresa ou fresca picada</li>
+                        <li>1 cebola, alho e molho de tomate</li>
+                        <li>Queijo mussarela para gratinar</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Faça um purê com a mandioca, leite e manteiga.</li>
+                        <li>Refogue a linguiça com temperos e um pouco de molho.</li>
+                        <li>Em um refratário: camada de purê, recheio de linguiça, resto do purê e queijo por cima. Leve
+                            ao forno.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-escondidinho')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-panqueca-carne" style="display: none;">
+                    <h3>Panqueca de Carne Moída</h3>
+                    <p><strong>Tempo:</strong> 40min | <strong>Rendimento:</strong> 10 unidades</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li><strong>Massa:</strong> 1 e 1/2 xícara de farinha, 1 xícara de leite, 2 ovos e sal.</li>
+                        <li><strong>Recheio:</strong> 500g de carne moída, cebola, alho e extrato de tomate.</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Bata os ingredientes da massa no liquidificador e frite discos finos em uma frigideira
+                            untada.</li>
+                        <li>Refogue a carne moída com os temperos até ficar bem sequinha.</li>
+                        <li>Recheie as massas, enrole e cubra com molho de tomate e queijo antes de aquecer.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-panqueca-carne')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-lasanha" style="display: none;">
+                    <h3>Lasanha à Bolonhesa Clássica</h3>
+                    <p><strong>Tempo:</strong> 1h | <strong>Rendimento:</strong> 8 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500g de massa para lasanha (pré-cozida)</li>
+                        <li>500g de carne moída e 2 sachês de molho de tomate</li>
+                        <li>400g de presunto e 400g de queijo mussarela</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Prepare um molho bolonhesa bem suculento.</li>
+                        <li>Monte em camadas: molho, massa, presunto, queijo. Repita até o topo.</li>
+                        <li>Finalize com bastante queijo e leve ao forno por 20 a 30 minutos.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-lasanha')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-torta-salgada" style="display: none;">
+                    <h3>Torta Salgada de Liquidificador</h3>
+                    <p><strong>Tempo:</strong> 50min | <strong>Rendimento:</strong> 12 pedaços</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li><strong>Massa:</strong> 3 ovos, 2 xícaras de leite, 1 xícara de óleo, 2 xícaras de farinha e
+                            1 colher de fermento.</li>
+                        <li><strong>Recheio:</strong> Frango desfiado temperado, milho e ervilha.</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Bata todos os ingredientes da massa no liquidificador.</li>
+                        <li>Despeje metade da massa em uma forma, coloque o recheio e cubra com o restante.</li>
+                        <li>Asse em forno médio (180°C) até dourar bem por cima.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-torta-salgada')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-file" style="display: none;">
+                    <h3>Filé Mignon ao Molho Madeira</h3>
+                    <p><strong>Tempo:</strong> 45min | <strong>Rendimento:</strong> 4 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>800g de medalhões de filé mignon</li>
+                        <li>1 colher de sopa de manteiga</li>
+                        <li>200ml de molho madeira pronto ou vinho tinto seco</li>
+                        <li>Sal e pimenta-do-reino a gosto</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Tempere os filés e sele na manteiga em fogo bem alto (para não soltar água).</li>
+                        <li>Retire a carne e, na mesma panela, coloque o molho para aproveitar o "fundinho" da carne.
+                        </li>
+                        <li>Regue os filés com o molho quente e sirva imediatamente.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-file')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-peru" style="display: none;">
+                    <h3>Peru Assado de Festas</h3>
+                    <p><strong>Tempo:</strong> 3h 30min | <strong>Rendimento:</strong> 10 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 peru inteiro (aprox. 4kg)</li>
+                        <li>1 garrafa de vinho branco seco</li>
+                        <li>Manteiga, ervas (tomilho/sálvia) e 1 cebola inteira</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Deixe o peru marinando no vinho com temperos por 12 horas.</li>
+                        <li>Coloque uma cebola dentro da cavidade e besunte o peru com muita manteiga.</li>
+                        <li>Asse coberto com papel alumínio (cerca de 30 min por quilo). Retire o papel no final para
+                            dourar.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-peru')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-fraldinha" style="display: none;">
+                    <h3>Fraldinha Assada na Manteiga de Alho</h3>
+                    <p><strong>Tempo:</strong> 45min | <strong>Rendimento:</strong> 4 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 peça de fraldinha (aprox. 1kg)</li>
+                        <li>3 colheres de sopa de manteiga</li>
+                        <li>4 dentes de alho amassados e sal grosso</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Faça uma pasta com a manteiga e o alho.</li>
+                        <li>Tempere a carne com sal grosso e cubra a parte de cima com a pasta de manteiga.</li>
+                        <li>Leve ao forno alto (220°C) por 25 a 30 minutos para ficar suculenta e rosada no meio.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-fraldinha')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-costela" style="display: none;">
+                    <h3>Costela Assada (Desmanchando)</h3>
+                    <p><strong>Tempo:</strong> 4h | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>2kg de costela bovina (janela)</li>
+                        <li>Sal grosso a gosto</li>
+                        <li>Papel celofane ou alumínio (várias camadas)</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Tempere a costela apenas com sal grosso.</li>
+                        <li>Envolva a carne em 3 ou 4 voltas de papel alumínio para não vazar o vapor.</li>
+                        <li>Asse em fogo baixo (160°C) por 3 horas. Abra o papel e asse por mais 1 hora para dourar a
+                            gordura.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-costela')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-enroladinho" style="display: none;">
+                    <h3>Enroladinho de Salsicha Assado</h3>
+                    <p><strong>Tempo:</strong> 45min | <strong>Rendimento:</strong> 20 unidades</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>10 salsichas cortadas ao meio</li>
+                        <li><strong>Massa:</strong> 2 xícaras de farinha, 1 ovo, 1/2 xícara de leite morno, 1 colher de
+                            sopa de açúcar e 1 colher de chá de fermento biológico seco.</li>
+                        <li>1 gema para pincelar</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Misture os ingredientes da massa e sove até ficar lisa. Deixe descansar por 20 min.</li>
+                        <li>Abra a massa, corte em tiras e enrole nas salsichas.</li>
+                        <li>Pincele com gema e asse em forno médio (180°C) até dourar.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-enroladinho')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-batata-carne" style="display: none;">
+                    <h3>Batata Gratinada com Carne Moída</h3>
+                    <p><strong>Tempo:</strong> 50min | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>4 batatas grandes cortadas em rodelas cozidas "al dente"</li>
+                        <li>500g de carne moída temperada e refogada</li>
+                        <li>1 caixinha de creme de leite</li>
+                        <li>200g de queijo mussarela</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Em um refratário, faça uma camada de batatas e cubra com a carne moída.</li>
+                        <li>Misture o creme de leite com um pouco de sal e jogue por cima.</li>
+                        <li>Finalize com o queijo e leve ao forno para gratinar por 15 a 20 minutos.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-batata-carne')">Fechar Receita</button>
+                </div>
+
+
+
+
+            </section>
+
+            <section id="cozidos" class="categoria">
+                <h2>Cozidos</h2>
+                <div class="grid-receitas">
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Vaca Atolada.webp" alt="Vaca Atolada">
+                        <h3>Vaca Atolada</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-vaca-atolada')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Ensopado de Peixe.jpg" alt="Moqueca">
+                        <h3>Ensopado de Peixe</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-moqueca')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Barreado Paranaense.webp" alt="Barreado">
+                        <h3>Barreado Paranaense</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-barreado')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Carne de Panela com Batatas].webp" alt="Carne de Panela">
+                        <h3>Carne de Panela com Batatas</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-carne-panela')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Frango Cozido (Ensopado).webp" alt="Frango Cozido">
+                        <h3>Frango Cozido (Ensopado)</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-frango-cozido')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Picadinho com Cerveja Preta.webp" alt="Picadinho">
+                        <h3>Picadinho com Cerveja Preta</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-picadinho-cerveja')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Goulash Húngaro.webp" alt="Goulash">
+                        <h3>Goulash Húngaro</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-goulash')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Ossobuco Cozido Lentamente.webp" alt="Ossobuco">
+                        <h3>Ossobuco Cozido Lentamente</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-ossobuco')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Caldo Verde Tradicional.jpg" alt="Caldo Verde">
+                        <h3>Caldo Verde Tradicional</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-caldo-verde')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Galinhada com Caldo Caipira.webp" alt="Galinhada">
+                        <h3>Galinhada com Caldo Caipira</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-galinhada')">Ver Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Canjiquinha com Costelinha.jpg" alt="Canjiquinha">
+                        <h3>Canjiquinha com Costelinha</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-canjiquinha')">Ver
+                            Receita</a>
+                    </div>
+
+                    <div class="card-receita">
+                        <img src="../receitas/Imagens/Dobradinha com Feijão Branco.jpg" alt="Dobradinha">
+                        <h3>Dobradinha com Feijão Branco</h3>
+                        <a href="#" class="btn-ver" onclick="mostrarReceita(event, 'receita-dobradinha')">Ver
+                            Receita</a>
+                    </div>
+
+                </div>
+
+                <div class="detalhe-receita" id="receita-vaca-atolada" style="display: none;">
+                    <h3>Vaca Atolada (Costela com Mandioca)</h3>
+                    <p><strong>Tempo:</strong> 1h 20min | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1kg de costela bovina em pedaços</li>
+                        <li>800g de mandioca limpa e picada</li>
+                        <li>Tomate, cebola, alho e cheiro-verde</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Sele a costela na pressão até dourar. Adicione temperos e água e cozinhe por 30 min.</li>
+                        <li>Abra, adicione a mandioca e mais água se necessário.</li>
+                        <li>Cozinhe por mais 20 min até a mandioca quase desmanchar e o caldo engrossar.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-vaca-atolada')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-moqueca" style="display: none;">
+                    <h3>Ensopado de Peixe (Moqueca Simples)</h3>
+                    <p><strong>Tempo:</strong> 40min | <strong>Rendimento:</strong> 4 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>800g de postas de peixe (Cação ou Tilápia)</li>
+                        <li>Pimentões coloridos e cebola em rodelas</li>
+                        <li>200ml de leite de coco e 2 colheres de azeite de dendê</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Faça camadas de vegetais e peixe em uma panela larga.</li>
+                        <li>Regue com o leite de coco e o dendê.</li>
+                        <li>Cozinhe em fogo baixo por 20 min sem mexer para não quebrar o peixe.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-moqueca')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-barreado" style="display: none;">
+                    <h3>Barreado (O Rei do Cozimento Longo)</h3>
+                    <p><strong>Tempo:</strong> 12h (Tradicional) ou 2h (Pressão) | <strong>Rendimento:</strong> 8
+                        porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>2kg de carne (músculo ou acém)</li>
+                        <li>300g de toucinho picado</li>
+                        <li>Muita cebola, alho, louro e cominho</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Cozinhe a carne com os temperos até que ela se desfaça totalmente ao toque.</li>
+                        <li>O caldo deve ficar grosso e a carne em fios.</li>
+                        <li>Sirva com farinha de mandioca e banana da terra.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-barreado')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-caldo-verde" style="display: none;">
+                    <h3>Caldo Verde Tradicional</h3>
+                    <p><strong>Tempo:</strong> 40min | <strong>Rendimento:</strong> 5 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500g de batatas cozidas e batidas</li>
+                        <li>1 gomo de paio ou calabresa fatiado</li>
+                        <li>1 maço de couve cortada bem fininha</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Frite a calabresa. Adicione o creme de batatas.</li>
+                        <li>Quando ferver, adicione a couve e desligue o fogo para ela ficar verdinha.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-caldo-verde')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-carne-panela" style="display: none;">
+                    <h3>Carne de Panela com Batatas e Cenoura</h3>
+                    <p><strong>Tempo:</strong> 50min | <strong>Rendimento:</strong> 5 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1kg de acém ou músculo em cubos</li>
+                        <li>3 batatas e 2 cenouras em pedaços grandes</li>
+                        <li>1 cebola picada, 3 dentes de alho e molho de tomate</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Sele a carne na panela de pressão com óleo bem quente.</li>
+                        <li>Adicione os temperos, o molho e água até cobrir. Cozinhe por 30 min após pegar pressão.</li>
+                        <li>Abra, coloque os legumes e cozinhe por mais 10 min (sem pressão) até ficarem macios.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-carne-panela')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-frango-cozido" style="display: none;">
+                    <h3>Frango Cozido (Ensopado Caipira)</h3>
+                    <p><strong>Tempo:</strong> 40min | <strong>Rendimento:</strong> 4 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>800g de coxas e sobrecoxas de frango</li>
+                        <li>1 pimentão picado e 2 tomates maduros</li>
+                        <li>Açafrão (cúrcuma), sal, pimenta e cheiro-verde</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Refogue o frango com o açafrão até dourar.</li>
+                        <li>Adicione os vegetais e um pouco de água (não precisa cobrir tudo).</li>
+                        <li>Tampe a panela e deixe cozinhar em fogo médio até o frango ficar macio e o caldo encorpado.
+                        </li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-frango-cozido')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-picadinho-cerveja" style="display: none;">
+                    <h3>Picadinho de Carne com Cerveja Preta</h3>
+                    <p><strong>Tempo:</strong> 1h | <strong>Rendimento:</strong> 4 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>600g de coxão duro ou alcatra em cubos pequenos</li>
+                        <li>1 lata de cerveja preta (do tipo malzbier ou dry stout)</li>
+                        <li>1 colher de sopa de farinha de trigo (para engrossar)</li>
+                        <li>Bacon picadinho para dar sabor</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Frite o bacon, sele a carne e polvilhe a farinha mexendo bem.</li>
+                        <li>Despeje a cerveja preta e um pouco de água.</li>
+                        <li>Cozinhe em fogo baixo até a carne desmanchar e o molho ficar escuro e aveludado.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-picadinho-cerveja')">Fechar
+                        Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-goulash" style="display: none;">
+                    <h3>Goulash (Estilo Húngaro)</h3>
+                    <p><strong>Tempo:</strong> 1h 40min | <strong>Rendimento:</strong> 4 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>800g de carne bovina (músculo ou acém) em cubos</li>
+                        <li>3 colheres de sopa de Páprica Doce (essencial!)</li>
+                        <li>2 cebolas grandes picadas e 2 tomates sem pele</li>
+                        <li>Batatas cortadas em cubos pequenos</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Refogue a cebola até dourar bem. Adicione a carne e a páprica (cuidado para não queimar a
+                            páprica).</li>
+                        <li>Adicione os tomates e água quente até cobrir. Cozinhe em fogo baixo até a carne ficar bem
+                            macia.</li>
+                        <li>Adicione as batatas no final e cozinhe até que fiquem macias e o molho engrosse.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-goulash')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-ossobuco" style="display: none;">
+                    <h3>Ossobuco Cozido Lentamente</h3>
+                    <p><strong>Tempo:</strong> 2h | <strong>Rendimento:</strong> 3 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>3 peças de ossobuco (músculo com osso)</li>
+                        <li>1 xícara de vinho tinto seco</li>
+                        <li>Cenoura, salsão e cebola picados (mirepoix)</li>
+                        <li>Caldo de carne natural</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Passe a carne na farinha de trigo e sele bem dos dois lados na panela.</li>
+                        <li>Adicione os vegetais, o vinho (para soltar o fundo da panela) e o caldo.</li>
+                        <li>Cozinhe em fogo baixíssimo ou na pressão por 1h até a carne soltar do osso. O tutano deve
+                            ficar preservado!</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-ossobuco')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-caldo-verde" style="display: none;">
+                    <h3>Caldo Verde Clássico</h3>
+                    <p><strong>Tempo:</strong> 45min | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500g de batatas descascadas</li>
+                        <li>1 gomo de linguiça calabresa ou paio fatiado</li>
+                        <li>1 maço de couve manteiga cortada bem fininha</li>
+                        <li>Azeite de oliva e sal</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Cozinhe as batatas em água e sal. Depois de macias, bata-as no liquidificador com a própria
+                            água do cozimento.</li>
+                        <li>Em outra panela, frite a calabresa no azeite. Despeje o creme de batatas por cima.</li>
+                        <li>Quando ferver, ajuste o sal e adicione a couve. Deixe cozinhar por apenas 2 minutos para
+                            manter a cor verde viva.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-caldo-verde')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-galinhada" style="display: none;">
+                    <h3>Galinhada com Caldo (Estilo Caipira)</h3>
+                    <p><strong>Tempo:</strong> 1h | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1 frango inteiro cortado em pedaços (ou coxas e sobrecoxas)</li>
+                        <li>2 xícaras de arroz agulhinha</li>
+                        <li>1 colher de sopa de açafrão-da-terra e 1 pimentão picado</li>
+                        <li>Caldo de galinha natural e muito cheiro-verde</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Frite bem o frango até dourar. Adicione cebola, alho e o açafrão.</li>
+                        <li>Junte o arroz e refogue com o frango. Adicione o caldo de galinha.</li>
+                        <li>Cozinhe até o arroz ficar macio, mas deixe um pouco de caldo no fundo para não ficar seco.
+                        </li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-galinhada')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-canjiquinha" style="display: none;">
+                    <h3>Canjiquinha com Costelinha (Quirera)</h3>
+                    <p><strong>Tempo:</strong> 1h 15min | <strong>Rendimento:</strong> 6 porções</p>
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>500g de canjiquinha (milho quebrado/quirera)</li>
+                        <li>800g de costelinha de porco em pedaços pequenos</li>
+                        <li>100g de bacon picado e 1 cebola grande</li>
+                        <li>Pimenta-do-reino e louro</li>
+                    </ul>
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li>Lave bem a canjiquinha e deixe de molho enquanto prepara a carne.</li>
+                        <li>Frite o bacon e a costelinha até dourarem bem. Adicione os temperos.</li>
+                        <li>Junte a canjiquinha e água quente. Cozinhe em fogo baixo, mexendo de vez em quando para não
+                            grudar, até o milho ficar macio.</li>
+                    </ol>
+                    <button class="btn-voltar" onclick="fecharReceita('receita-canjiquinha')">Fechar Receita</button>
+                </div>
+
+                <div class="detalhe-receita" id="receita-dobradinha" style="display: none;">
+                    <h3>Dobradinha (Bucho com Feijão Branco)</h3>
+                    <p><strong>Tempo:</strong> 1h 30min | <strong>Rendimento:</strong> 6 porções</p>
+
+                    <h4>Ingredientes:</h4>
+                    <ul>
+                        <li>1kg de bucho bovino limpo e cortado em tiras</li>
+                        <li>500g de feijão branco (deixe de molho por 12h)</li>
+                        <li>200g de linguiça calabresa em rodelas</li>
+                        <li>100g de bacon picado</li>
+                        <li>Suco de 2 limões e 2 colheres de sopa de vinagre (para a limpeza)</li>
+                        <li>Temperos: Louro, páprica, alho e cebola</li>
+                    </ul>
+
+                    <h4>Modo de Preparo:</h4>
+                    <ol>
+                        <li><strong>Limpeza:</strong> Ferva o bucho em água com o limão e o vinagre por 15 minutos.
+                            Escorra e lave bem.</li>
+                        <li><strong>Cozimento da Carne:</strong> Na panela de pressão, cozinhe o bucho com água e louro
+                            por cerca de 40 minutos até ficar macio.</li>
+                        <li><strong>Finalização:</strong> Em outra panela grande, frite o bacon e a calabresa. Adicione
+                            a cebola e o alho.</li>
+                        <li>Junte o bucho cozido, o feijão branco e água. Cozinhe na pressão por mais 20 minutos até o
+                            feijão amaciar e o caldo engrossar.</li>
+                    </ol>
+
+                    <button class="btn-voltar" onclick="fecharReceita('receita-dobradinha')">Fechar Receita</button>
+                </div>
+
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </main>
+
+</body>
+
+</html>
