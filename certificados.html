@@ -1,72 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificados</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="certifi.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificados — Maylon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">Maylon</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre mim</a></li>
-                <li><a href="https://drive.google.com/file/d/1il1qcLhUKZm3CCyfpPATmkC--QxJE7HO/view?usp=sharing" target="_blank">Currículo</a></li> 
-                <li><a href="certificados.html">Certificados</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <canvas id="snowfall"></canvas>
 
-    <div class="stars-container">
+  <header class="site-header">
+    <div class="nav-inner">
+      <span class="logo">Maylon</span>
+      <button class="mobile-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre mim</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="certificados.html" aria-current="page">Certificados</a>
+        <a href="projetos.html">Projetos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head reveal">
+      <p class="eyebrow">Cursos concluídos</p>
+      <h2>Certificados</h2>
     </div>
 
-    <main>
-        <div class="container">
-            <div class="certificado-card">
-                <img src="imagem/lot.png" alt="Certificado IoT">
-                <h3>Certificado - Introdução à IoT e Transformação Digital</h3>
-                <p>Conceitos de Internet das Coisas (IoT), Big Data, Inteligência Artificial e como a digitalização está
-                    mudando os negócios.</p>
-                <a href="pdf/iot.pdf" download class="btn-download">Baixar Certificado</a>
-            </div>
+    <section class="panel reveal">
+      <div class="cert-grid">
 
-            <div class="certificado-card">
-                <img src="imagem/office.png" alt="Certificado Office 365">
-                <h3>Certificado - Trilha de Conhecimento Office 365</h3>
-                <p>Uso essencial de ferramentas da Microsoft: Teams (colaboração), OneDrive (nuvem) e Outlook (e-mail),
-                    fundamentais para o trabalho em escritório.</p>
-                <a href="pdf/certificados_office.zip" download class="btn-download">Baixar Certificado</a>
-            </div>
-
-            <div class="certificado-card">
-                <img src="imagem/start.webp" alt="Certificado Start Pro">
-                <h3>Certificado - Marketing Digital - Start Pro</h3>
-                <p>Marketing Digital (como divulgar online) e Inglês Básico (comunicação inicial), habilidades
-                    importantes para o mercado de trabalho.</p>
-                <a href="#" class="btn-download">Certificado em Breve</a>
-            </div>
+        <div class="cert-card">
+          <div class="cert-doc">
+            <span class="doc-icon">PDF</span>
+            <span class="doc-label">Certificado</span>
+          </div>
+          <div class="cert-body">
+            <h3>Introdução à IoT e Transformação Digital</h3>
+            <p>Conceitos de Internet das Coisas (IoT), Big Data e Inteligência Artificial, e como a digitalização está mudando os negócios.</p>
+            <a class="btn-cert" href="assets/certificados/iot.pdf.pdf" download>Baixar PDF</a>
+          </div>
         </div>
-    </main>
 
-    <div class="social-float">
-        <a href="https://github.com/Maylon837" target="_blank">
-            <img src="imagem/github.webp" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/maylon-gabriel-39330379/" target="_blank">
-            <img src="imagem/linkedin.png" alt="LinkedIn">
-        </a>
-    </div>
+        <div class="cert-card">
+          <div class="cert-doc">
+            <span class="doc-icon">PDF</span>
+            <span class="doc-label">Certificado</span>
+          </div>
+          <div class="cert-body">
+            <h3>Trilha de Conhecimento Office 365</h3>
+            <p>Uso essencial de ferramentas da Microsoft — Teams, OneDrive e Outlook — fundamentais para o trabalho em escritório.</p>
+            <a class="btn-cert" href="assets/certificados/certificados_office.zip.rar" download>Baixar PDF</a>
+          </div>
+        </div>
 
+        <div class="cert-card">
+          <div class="cert-doc">
+            <span class="doc-icon">PDF</span>
+            <span class="doc-label">Certificado</span>
+          </div>
+          <div class="cert-body">
+            <h3>Trilha Digital — Start Pro</h3>
+            <p>Marketing digital (como divulgar online) e inglês básico — habilidades importantes para o mercado de trabalho.</p>
+            <!-- Enquanto o certificado não sai, o botão fica desativado. -->
+            <span class="btn-cert disabled">Certificado em breve</span>
+          </div>
+        </div>
+
+        <!-- COLOQUE AQUI um novo certificado copiando um dos blocos .cert-card acima -->
+
+      </div>
+    </section>
+  </main>
+
+  <div class="social-dock">
+    <a href="https://github.com/Maylon837" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+    <a href="https://www.linkedin.com/in/maylon-gabriel-100b383a8/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+  </div>
+
+  <footer class="site-footer">© 2026 Maylon. Todos os direitos reservados.</footer>
+
+  <script src="assets/js/snow.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>

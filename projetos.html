@@ -1,107 +1,145 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="proje.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos — Maylon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">Maylon</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre mim</a></li>
-                <li><a href="https://drive.google.com/file/d/1il1qcLhUKZm3CCyfpPATmkC--QxJE7HO/view?usp=sharing" target="_blank">Currículo</a></li> 
-                <li><a href="certificados.html">Certificados</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <canvas id="snowfall"></canvas>
 
-    <div class="stars-container">
+  <header class="site-header">
+    <div class="nav-inner">
+      <span class="logo">Maylon</span>
+      <button class="mobile-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre mim</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="certificados.html">Certificados</a>
+        <a href="projetos.html" aria-current="page">Projetos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head reveal">
+      <p class="eyebrow">Prática e código</p>
+      <h2>Meus projetos de desenvolvimento web</h2>
     </div>
 
-    <main class="projetos-main">
-        <h1>Meus Projetos de Desenvolvimento Web</h1>
+    <section class="panel reveal">
 
-        <div class="modulos-wrapper">
-            <section class="modulo-projeto">
-                <h2>Módulo 01: HTML e CSS Básico</h2>
-                <p>Projetos focados nos fundamentos de estrutura e estilização de páginas web.</p>
-                <ul class="lista-projetos">
-                    <li>
-                        <a href="caminho/desafio01/index.html" class="projeto-link" target="_blank">Formulário de
-                            Cadastro</a>
-                        <span class="descricao">Primeiros passos com estrutura de tags.</span>
-                    </li>
-                    <li>
-                        <a href="caminho/Exercicios/index.html" class="projeto-link" target="_blank">Minha Loja
-                            Eletrônicos</a>
-                        <span class="descricao">Estilização básica de elementos.</span>
-                    </li>
-                    <li>
-                        <a href="caminho/roupas/desafio.html" class="projeto-link" target="_blank">Minha Loja de
-                            Roupas</a>
-                        <span class="descricao">Estilização básica de elementos.</span>
-                    </li>
-                </ul>
-            </section>
+      <!-- ==================================================================
+           MÓDULO 01 — HTML e CSS Básico
+           Cada linha .project-card é um projeto. O "href" deve apontar para
+           a pasta/arquivo do projeto depois que você mover para dentro de
+           /projetos/. Ex: projetos/formulario-cadastro/index.html
+           ================================================================== -->
+      <div class="module">
+        <h2>Módulo 01 — HTML e CSS Básico</h2>
+        <p class="module-desc">Projetos focados nos fundamentos de estrutura e estilização de páginas web.</p>
 
-            <section class="modulo-projeto">
-                <h2>Módulo 02: JavaScript e Interatividade</h2>
-                <p>Projetos com foco em lógica de programação e manipulação do DOM.</p>
-                <ul class="lista-projetos">
-                    <li>
-                        <a href="caminho/calculoMedia/index.html" class="projeto-link" target="_blank">Projeto:
-                            Calculadora Simples</a>
-                        <span class="descricao">Demonstração de funções básicas em JavaScript.</span>
-                    </li>
-                    <li>
-                        <a href="caminho/metodoPagamento/index.html" class="projeto-link" target="_blank">Projeto:
-                            Pagamento Simples</a>
-                        <span class="descricao">Funções básicas em JavaScript.</span>
-                    </li>
-                    <li>
-                        <a href="caminho/desafio1/index.html" class="projeto-link" target="_blank">Projeto: Busca CEP</a>
-                        <span class="descricao">Funções básicas em JavaScript.</span>
-                    </li>
-                    <li>
-                        <a href="caminho/desafio2/index.html" class="projeto-link" target="_blank">Projeto: Cadastro
-                            Aluno e Nota</a>
-                        <span class="descricao">Funções básicas em JavaScript.</span>
-                    </li>
-                    <li>
-                        <a href="caminho/receitas/index.html" class="projeto-link" target="_blank">Projeto: Receitas de Doces/Bolos,Assados,Cozidos</a>
-                        <span class="descricao">Funções básicas em JavaScript.</span>
-                    </li>
-                    <li>
-                        <a href="caminho/snake/index.html" class="projeto-link" target="_blank">Projeto: Jogo da Snake</a>
-                        <span class="descricao">Funções básicas em JavaScript.</span>
-                    </li>
-
-                </ul>
-            </section>
-        </div>
-    </main>
-
-    <div class="social-float">
-        <a href="https://github.com/Maylon837" target="_blank">
-            <img src="imagem/github.webp" alt="GitHub">
+        <a class="project-card" href="projetos/formulario-cadastro/index.html">
+          <div>
+            <p class="project-title">Formulário de Cadastro</p>
+            <p class="project-desc">Primeiros passos com estrutura de tags.</p>
+          </div>
+          <div class="tag-row"><span class="tag">HTML</span></div>
         </a>
-        <a href="https://www.linkedin.com/in/maylon-gabriel-39330379/" target="_blank">
-            <img src="imagem/linkedin.png" alt="LinkedIn">
-        </a>
-    </div>
 
+        <a class="project-card" href="projetos/loja-eletronicos/index.html">
+          <div>
+            <p class="project-title">Minha Loja Eletrônicos</p>
+            <p class="project-desc">Estilização básica de elementos.</p>
+          </div>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+        </a>
+
+        <a class="project-card" href="projetos/loja-de-roupas/desafio.html">
+          <div>
+            <p class="project-title">Minha Loja de Roupas</p>
+            <p class="project-desc">Estilização básica de elementos.</p>
+          </div>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+        </a>
+
+        <!-- COLOQUE AQUI um novo projeto deste módulo, copiando um bloco .project-card -->
+      </div>
+
+      <!-- ==================================================================
+           MÓDULO 02 — JavaScript e Interatividade
+           ================================================================== -->
+      <div class="module">
+        <h2>Módulo 02 — JavaScript e Interatividade</h2>
+        <p class="module-desc">Projetos com foco em lógica de programação e manipulação do DOM.</p>
+
+        <a class="project-card" href="projetos/calculadora-simples/index.html">
+          <div>
+            <p class="project-title">Calculadora Simples</p>
+            <p class="project-desc">Demonstração de funções básicas em JavaScript.</p>
+          </div>
+          <div class="tag-row"><span class="tag">JavaScript</span></div>
+        </a>
+
+        <a class="project-card" href="projetos/pagamento-simples/index.html">
+          <div>
+            <p class="project-title">Pagamento Simples</p>
+            <p class="project-desc">Funções básicas em JavaScript.</p>
+          </div>
+          <div class="tag-row"><span class="tag">JavaScript</span></div>
+        </a>
+
+        <a class="project-card" href="projetos/busca-cep/index.html">
+          <div>
+            <p class="project-title">Busca CEP</p>
+            <p class="project-desc">Funções básicas em JavaScript.</p>
+          </div>
+          <div class="tag-row"><span class="tag">JavaScript</span></div>
+        </a>
+
+        <a class="project-card" href="projetos/cadastro-aluno-nota/index.html">
+          <div>
+            <p class="project-title">Cadastro Aluno e Nota</p>
+            <p class="project-desc">Funções básicas em JavaScript.</p>
+          </div>
+          <div class="tag-row"><span class="tag">JavaScript</span></div>
+        </a>
+
+        <a class="project-card" href="projetos/receitas-doces-bolos/index.html">
+          <div>
+            <p class="project-title">Receitas de Doces, Bolos, Assados e Cozidos</p>
+            <p class="project-desc">Funções básicas em JavaScript.</p>
+          </div>
+          <div class="tag-row"><span class="tag">JavaScript</span></div>
+        </a>
+
+        <a class="project-card" href="projetos/jogo-da-snake/index.html">
+          <div>
+            <p class="project-title">Jogo da Snake</p>
+            <p class="project-desc">Funções básicas em JavaScript.</p>
+          </div>
+          <div class="tag-row"><span class="tag">JavaScript</span></div>
+        </a>
+
+        <!-- COLOQUE AQUI um novo projeto deste módulo, copiando um bloco .project-card -->
+      </div>
+
+    </section>
+  </main>
+
+  <div class="social-dock">
+    <a href="https://github.com/Maylon837" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+    <a href="https://www.linkedin.com/in/maylon-gabriel-100b383a8/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+  </div>
+
+  <footer class="site-footer">© 2026 Maylon. Todos os direitos reservados.</footer>
+
+  <script src="assets/js/snow.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>

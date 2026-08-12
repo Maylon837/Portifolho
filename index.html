@@ -1,58 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolho</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maylon — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
-    <header>
-        <div class="logo">Maylon</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre mim</a></li>
-                <li><a href="https://drive.google.com/file/d/1il1qcLhUKZm3CCyfpPATmkC--QxJE7HO/view?usp=sharing" target="_blank">Currículo</a></li> 
-                <li><a href="certificados.html">Certificados</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Fundo de estrelas -->
-    <div class="stars-container">
-        <!-- As estrelas são geradas via CSS/JS ou você pode manter as divs que já tem -->
+  <!-- Neve caindo no fundo de toda a página -->
+  <canvas id="snowfall"></canvas>
+
+  <!-- ======================= CABEÇALHO / MENU =======================
+       Este bloco de menu é igual nas 5 páginas do site. Se adicionar ou
+       renomear uma página, repita a mudança em todas (index, sobre,
+       curriculo, certificados, projetos). -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <span class="logo">Maylon</span>
+      <button class="mobile-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="main-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="sobre.html">Sobre mim</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="certificados.html">Certificados</a>
+        <a href="projetos.html">Projetos</a>
+      </nav>
     </div>
+  </header>
 
-    <main>
-        <div class="main-content">
-            <div class="texto-container">
-                <h1>Olá, eu sou Maylon</h1>
-                <p>Seja bem-vindo ao meu portfólio! Eu atualmente estou estudando e ampliando meus conhecimentos na
-                    faculdade da UMC CAP para resolver seus problemas.</p>
-            </div>
-
-            <div class="imagem-container">
-                <img src="imagem/eu3.png" alt="Foto de Maylon">
-            </div>
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Desenvolvimento web · UMC</p>
+        <h1>Olá, eu sou<br />Maylon.</h1>
+        <p>
+          Estudante de desenvolvimento na UMC, construindo minha base em
+          HTML, CSS, JavaScript, Java e Python. Este portfólio reúne o que
+          venho aprendendo — e o que estou pronto para aplicar em um
+          ambiente real.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="projetos.html">Ver projetos</a>
+          <a class="btn btn-ghost" href="curriculo.html">Ver currículo</a>
         </div>
+      </div>
 
-        <div class="social-float">
-            <a href="https://github.com/Maylon837" target="_blank">
-                <img src="imagem/github.webp" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/maylon-gabriel-39330379/" target="_blank">
-                <img src="imagem/linkedin.png" alt="LinkedIn">
-            </a>
+      <div class="hero-photo reveal">
+        <div class="frame">
+          <img src="assets/img/eu3.png" alt="Foto de Maylon" />
         </div>
-    </main>
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="social-dock">
+    <a href="https://github.com/Maylon837" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+    <a href="https://www.linkedin.com/in/maylon-gabriel-100b383a8/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+  </div>
+
+  <footer class="site-footer">© 2026 Maylon. Todos os direitos reservados.</footer>
+
+  <script src="assets/js/snow.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo — Maylon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <canvas id="snowfall"></canvas>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <span class="logo">Maylon</span>
+      <button class="mobile-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre mim</a>
+        <a href="curriculo.html" aria-current="page">Currículo</a>
+        <a href="certificados.html">Certificados</a>
+        <a href="projetos.html">Projetos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head reveal">
+      <p class="eyebrow">Formação e habilidades</p>
+      <h2>Currículo</h2>
+    </div>
+
+    <section class="panel reveal">
+
+      <!-- ================================================================
+           LINK DO CURRÍCULO (GOOGLE DRIVE)
+           Troque o "href" abaixo pelo link de compartilhamento do seu
+           currículo no Google Drive. Deixe o compartilhamento como
+           "Qualquer pessoa com o link pode visualizar".
+           ================================================================ -->
+      <div class="cv-download">
+        <div>
+          <p class="cv-title" style="margin:0 0 4px;">Currículo completo</p>
+          <p class="cv-meta" style="margin:0;">Disponível no Google Drive</p>
+        </div>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1il1qcLhUKZm3CCyfpPATmkC--QxJE7HO/view?usp=sharing" target="_blank" rel="noopener">Abrir no Drive</a>
+      </div>
+
+      <div class="cv-grid" style="margin-top:40px;">
+
+        <!-- ============================================================
+             FORMAÇÃO: edite/adicione os cursos e datas.
+             ============================================================ -->
+        <div class="cv-block">
+          <h3>Formação</h3>
+          <div class="cv-item">
+            <p class="cv-title">Análise e Desenvolvimento de Sistemas</p>
+            <p class="cv-meta">Universidade de Mogi das Cruzes (UMC) · em andamento</p>
+          </div>
+          <div class="cv-item">
+            <p class="cv-title">Trilha Start Pro — Marketing Digital e Inglês</p>
+            <p class="cv-meta">Formação complementar</p>
+          </div>
+          <!-- COLOQUE AQUI mais cursos/formações, copiando o bloco .cv-item acima -->
+        </div>
+
+        <!-- ============================================================
+             HABILIDADES: adicione ou remova tags livremente.
+             ============================================================ -->
+        <div class="cv-block">
+          <h3>Habilidades</h3>
+          <div class="tag-row">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">NoSQL</span>
+            <span class="tag">Git &amp; GitHub</span>
+            <!-- COLOQUE AQUI mais habilidades -->
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-grid" style="margin-top:8px;">
+        <div class="cv-block">
+          <h3>Idiomas</h3>
+          <div class="cv-item">
+            <p class="cv-title">Português</p>
+            <p class="cv-meta">Nativo</p>
+          </div>
+          <div class="cv-item">
+            <p class="cv-title">Inglês</p>
+            <p class="cv-meta">Básico</p>
+          </div>
+        </div>
+
+        <div class="cv-block">
+          <h3>Experiência</h3>
+          <!-- ==========================================================
+               EXPERIÊNCIA: se ainda não tiver experiência profissional,
+               pode remover este bloco inteiro, ou usar para estágios,
+               projetos voluntários ou freelas.
+               ========================================================== -->
+          <div class="cv-item">
+            <p class="cv-title">COLOQUE AQUI o cargo/experiência</p>
+            <p class="cv-meta">Empresa · período</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <div class="social-dock">
+    <a href="https://github.com/Maylon837" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+    <a href="https://www.linkedin.com/in/maylon-gabriel-100b383a8/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+  </div>
+
+  <footer class="site-footer">© 2026 Maylon. Todos os direitos reservados.</footer>
+
+  <script src="assets/js/snow.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
